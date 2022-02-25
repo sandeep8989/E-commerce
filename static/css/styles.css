@@ -1,0 +1,359 @@
+    /*body  {
+    background-image: url("./images/2.jpeg");
+    width: 100%;
+    height: 100%;
+    
+  }
+*/
+body{
+margin:0px;
+/*font-family: "Lato", sans-serif;*/
+font-family: museo-sans-rounded,Helvetica,FreeSans,"Liberation Sans",sans-serif;
+}
+
+
+
+.spinner {
+  width: 80px;
+  height: 80px;
+
+  position: relative;
+ position: absolute;
+top: 42%;
+left: 46%;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: blue;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ffffff;
+z-index: 999999;
+}
+
+
+header.coffee .navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  	
+  z-index: 1;
+  width: 100%;
+  background-color: transparent; 
+}
+ 
+		
+		
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  /*width: 200px;*/
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  padding-top: 75px;
+  padding-right: 100px;
+  bottom: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a {
+  padding: 6px 8px 50px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #FEFEFE;
+  display: block;
+  border: none;
+  background: none;
+  width: 150px;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover,  {
+  color: #ffffff;
+}
+
+/* Main content */
+ 
+/* Add an active class to the active dropdown button */
+/*.active {
+  background-color: green;
+  color: white;
+}
+*/
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+/*.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}*/
+
+/* Optional: Style the caret down icon */
+/*.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}*/
+
+/* Some media queries for responsiveness */
+/*@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}*/
+
+
+#videoBG {
+  position: fixed;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 100%) {
+  #videoBG {
+    display: none;
+  }
+  body {
+    background: url('images/fruits1.png');
+    background-size: cover;
+  }
+}
+
+
+
+@keyframes circle{
+  0%{
+    transform:rotate(0deg)
+              translate(-260px)
+              rotate(0deg);
+              
+  
+  }
+
+  100% {
+    transform:rotate(90deg)
+              translate(-165px)
+              rotate(-90deg);
+  }
+}
+
+
+@keyframes circle2{
+  0%{
+    transform:rotate(90deg)
+              translate(-175px)
+              rotate(-90deg);
+              
+  
+  }
+
+  100% {
+    transform:rotate(180deg)
+              translate(-255px)
+              rotate(-180deg);
+  }
+}
+
+@keyframes circle3{
+  0%{
+    transform:rotate(180deg)
+              translate(-255px)
+              rotate(-180deg);
+              
+  
+  }
+
+  100% {
+    transform:rotate(270deg)
+              translate(-200px)
+              rotate(-270deg);
+  }
+}
+
+
+@keyframes circle4{
+  0%{
+    transform:rotate(270deg)
+              translate(-165px)
+              rotate(-270deg);
+              
+  
+  }
+
+  100% {
+    transform:rotate(360deg)
+              translate(-265px)
+              rotate(-360deg);
+  }
+}
+
+
+
+
+
+
+.main{
+  width:600px;
+  height:400px;
+  border:2px solid white;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  margin:auto;
+  border-radius:50%; 
+}
+
+#circle{
+  width: 150px;
+  height: 150px;
+  background-image: url(../images/image3.png);
+  border-radius:50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:fixed;
+  top:0; bottom:0; left:0; right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: circle 10s linear infinite;
+  
+}
+/*.circle{
+  width:200px;
+  height:150px;*/
+  /*border:2px solid white;*/
+  /*background:black;*/
+  /*background: url('images/vegtables.png');*/
+  /*background: url("https://groceries-mart.myshopify.com/" target="_blank");*/
+  /*background-image: url(../images/vegtables.png);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  /*display: block;*/
+  /*background-color: #cccccc;*/
+  /*border-radius:50%;
+  position:fixed;
+  top:0; bottom:0; left:0; right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: circle 10s linear infinite;
+  
+}*/
+  
+/*.circle{
+  width:200px;
+  height:150px;
+  background-image: url(../images/veg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:50%;
+  position:fixed;
+  top:0; bottom:0; left:0;right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: circle 10s linear infinite;
+}*/
+
+.circle2{
+  width:150px;
+  height:150px;
+  background-image: url(../images/image2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:50%;
+  position:fixed;
+  top:0; bottom:0; left:0;right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: circle2 10s linear infinite;
+}
+
+
+.circle3{
+  width:150px;
+  height:150px;
+  background-image: url(../images/image1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:50%;
+  position:fixed;
+  top:0; bottom:0; left:0;right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: circle3 10s linear infinite;
+
+}
+
+
+.circle4{
+  width:150px;
+  height:150px;
+  background-image: url(../images/image4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:50%;
+  position:fixed;
+  top:0; bottom:0; left:0;right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: circle4 10s linear infinite;
+
+
+  
+}
+
+
+
+
+
+

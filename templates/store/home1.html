@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Animated Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/styles_home.css' %}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.min.js"></script>
+  <script src="{% static 'js/main_home.js' %}"></script>
+  
+</head>
+
+<body>
+ <header class="coffee">
+ <nav class="navigation">
+ <div class="container">
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"> <img src="{% static 'images/logo.png' %}" alt="">  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+     
+    <form action="{% url 'search' %}" class="search" method='GET'>  
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="keyword">
+    </form>
+    </div>
+  </nav>
+  </div>
+  </nav>
+  
+  
+  
+ 
+<div class="sidenav">
+  <a href="index1">Milk</a>
+  <a href="grocery">Groceries</a>
+  <a href="spices">Spices</a>
+  <a href="pulses">Pulses</a>
+  <a href="vegetables">Vegetables</a>
+  <!-- <button class="dropdown-btn">Dropdown 
+    <i class="fa fa-caret-down"></i>
+  </button> -->
+  <!-- <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div> -->
+  <a href="fruits">Fruits</a>
+</div>
+
+<video id="videoBG" poster="{% static 'images/fruits1.png' %}" autoplay muted loop>
+  <source src="{% static 'footage.mp4' %}" type="video/mp4">
+  
+</video>
+
+  <div class="main">
+
+  <div class="circle">
+
+    <a href="index1" id="circle"></a>
+    <!-- <img src="images/circle-cropped" alt="circle" style="width:200px"> -->
+    
+  </div>
+  <div class="circle2">
+    <a href="fruits" id="circle2"></a>
+  </div>
+
+  <div class="circle3">
+    <a href="vegetables" id="circle3"></a>
+  </div>
+
+  <div class="circle4">
+    <a href="groceries" id="circle4"></a>
+  </div>
+
+  
+  
+</div>
+
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+
+</body>
+
+</html>

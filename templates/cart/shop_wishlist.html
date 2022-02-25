@@ -1,0 +1,373 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+    <title>Dirgayus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="keywords" content="blog, business, clean, clear, cooporate, creative, design web, flat, marketing, minimal, portfolio, shop, shopping, unique">
+    <meta name="author" content="MARTECH | Deer Creative Theme">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/custom_bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/elegant.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/scroll.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/jquery.fancybox.min.css' %}">
+    <link rel="shortcut icon" href="{% static 'assets/images/shortcut.png' %}">
+	<style>
+    	#hover-effect1:hover{
+    		background-color:#88C74A;
+    		color:white;
+    	}
+    	#hover-effect2:hover{
+    		background-color:#F8F8F8;
+    		
+    	}
+    </style>
+  </head>
+  <link rel="stylesheet" href="../../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <body>
+    <div id="main">
+      <header>
+        <div class="header-block d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="header-left d-flex flex-column flex-md-row align-items-center">
+                  <p class="d-flex align-items-center"><i class="fas fa-envelope"></i>dirgayus@gmail.com</p>
+                  <p class="d-flex align-items-center"><i class="fas fa-phone"></i>+91 987 654 3210</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="header-right d-flex flex-column flex-md-row justify-content-md-end justify-content-center align-items-center">
+                  <div class="social-link d-flex"><a href="#"><i class="fab fa-facebook-f"> </i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-invision"> </i></a><a href="#"><i class="fab fa-pinterest-p"> </i></a></div>
+                  <div class="language">
+                    <div class="selected-language"><img src="{% static 'assets/images/homepage01/usa.jpg' %}" alt="">English<i class="arrow_carrot-down"></i>
+                      <ul class="list-language">
+                        <li><img src="{% static 'assets/images/homepage01/usa.jpg' %}" alt="">English</li>
+                        <li><img src="{% static 'assets/images/homepage01/Malaysia.png' %}" alt="">Malay</li>
+                        <li><img src="{% static 'assets/images/homepage01/usa.jpg' %}" alt="">Japan</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="login d-flex"><a href="accounts/login"><i class="fas fa-user"></i>Login</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navigation d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-2"><a class="logo" href="index.html"><img src="{% static 'assets/images/logo (1).png' %}" alt=""></a></div>
+              <div class="col-8">
+                <div class="navgition-menu d-flex align-items-center justify-content-center">
+                  <ul class="mb-0">
+                    <li class="toggleable"> <a class="menu-item" href="{% url 'index1' %}">Home</a>
+                      
+                    </li>
+                   
+                   
+                    
+                     
+                    </li>
+                    <li class="toggleable"><a class="menu-item" href="{% url 'about_us' %}">About us</a></li>
+                    <li class="toggleable"> <a href="{% url 'contact_us' %}" class="menu-item">Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="product-function d-flex align-items-center justify-content-end">
+                  <div id="wishlist"><a class="function-icon icon_heart_alt" href="shop_compare"></a></div>
+                  <div id="cart"><a class="function-icon icon_bag_alt" href="shop_wishlist"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div id="mobile-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <div class="mobile-menu_block d-flex align-items-center"><a class="mobile-menu--control" href="#"><i class="fas fa-bars"></i></a>
+                  <div id="ogami-mobile-menu">
+                    <button class="no-round-btn" id="mobile-menu--closebtn">Close menu</button>
+                    <div class="mobile-menu_items">
+                      <ul class="mb-0 d-flex flex-column">
+                        <li class="toggleable"> <a class="menu-item active" href="{% url 'index1' %}">Home</a><span class="sub-menu--expander"><i class="icon_plus"></i></span>
+                          <ul class="sub-menu">
+                            <li><a href="index.html">Homepage 1</a></li>
+                            <li><a href="homepage02.html">Homepage 2</a></li>
+                            <li><a href="homepage03.html">Homepage 3</a></li>
+                            <li><a href="homepage04.html">Homepage 4</a></li>
+                            <li><a href="homepage05.html">Homepage 5</a></li>
+                          </ul>
+                        </li>
+                      
+                       
+                        <li class="toggleable"><a class="menu-item" href="#">Pages</a><span class="sub-menu--expander"><i class="icon_plus"></i></span>
+                          <ul class="sub-menu">
+                            
+                            <li><a href="about_us">about us</a></li>
+                            <li><a href="contact_us">contact us</a></li>
+                            
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mobile-login">
+                      <h2>My account</h2><a href="accounts/login">Login</a><a href="register.html">Register</a>
+                    </div>
+                    <div class="mobile-social"><a href="#"><i class="fab fa-facebook-f"> </i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-invision"> </i></a><a href="#"><i class="fab fa-pinterest-p"> </i></a></div>
+                  </div>
+                  <div class="ogamin-mobile-menu_bg"></div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="mobile-menu_logo text-center d-flex justify-content-center align-items-center"><a href="#"><img src="{% static 'assets/images/logo.png' %}" alt=""></a></div>
+              </div>
+              <div class="col-3">
+                <div class="mobile-product_function d-flex align-items-center justify-content-end"><a class="function-icon icon_heart_alt" href="wishlist.html"></a><a class="function-icon icon_bag_alt" href="shop_cart.html"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navigation-filter"> 
+          <div class="container">
+            <div class="row">
+              
+              <div class="col-12 ">
+                <div class="website-search">
+                  <div class="row no-gutters">
+                    <div class="col-0 col-md-0 col-lg-4 col-xl-3">
+                      <div class="filter-search" id="hover-effect1">
+                        <div class="categories-select d-flex align-items-center justify-content-around" 
+                        ><span>All Categories</span><i class="arrow_carrot-down"></i></div>
+                        <div class="categories-select_box">
+                          <ul>
+                               <li><a href="index" style="color:#88C74A">Milk</a></li>
+                               <li><a href="grocery" style="color:#88C74A">Groceries</a></li>
+						       <li><a href="fruits" style="color:#88C74A">Fruits</a></li>
+						       <li><a href="vegetables" style="color:#88C74A">Vegetables</a></li>
+						       <li><a href="spices" style="color:#88C74A">Spices</a></li>
+						       <li><a href="pulses" style="color:#88C74A">Pulses</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-8 col-md-8 col-lg-5 col-xl-7" >
+                      <div class="search-input">
+                        <input class="no-round-input no-border" type="text" id="hover-effect2" placeholder="What do you need">
+                      </div>
+                    </div>
+                    <div class="col-4 col-md-4 col-lg-3 col-xl-2" >
+                      <button class="no-round-btn">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End header-->
+      <div class="ogami-breadcrumb">
+        <div class="container">
+          <ul>
+            <li> <a class="breadcrumb-link" href="homepage04.html"> <i class="fas fa-home"></i>Home</a></li>
+            <li> <a class="breadcrumb-link" href="index">Shop</a></li>
+            <li> <a class="breadcrumb-link active" href="shop_wishlist">Shopping Cart</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End breadcrumb-->
+	  <div class="order-step">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="order-step_block">
+                <div class="row no-gutters">
+                  <div class="col-12 col-md-4">
+                    <div class="step-block active">
+                      <div class="step">
+                        <h2>Shopping Cart</h2><span>01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="step-block ">
+                      <div class="step">
+                        <h2>Check Out</h2><span>02</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="step-block">
+                      <div class="step">
+                        <h2>Order Completed</h2><span>03</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shopping-cart">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="product-table">
+                <table class="table table-responsive"> 
+                  <colgroup>
+                    <col span="1" style="width: 15%">
+                    <col span="1" style="width: 30%">
+                    <col span="1" style="width: 15%">
+                    <col span="1" style="width: 15%">
+                    <col span="1" style="width: 15%">
+                    <col span="1" style="width: 10%">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th class="product-iamge" scope="col">Image</th>
+                      <th class="product-name" scope="col">Product name</th>
+                      <th class="product-price" scope="col">Price</th>
+                      <th class="product-quantity" scope="col">Quantity</th>
+                      <th class="product-total" scope="col">Total</th>
+                      <th class="product-clear" scope="col"> 
+                        <button class="no-round-btn"><i class="icon_close"></i></button>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  {% for cart_item in cart_items %}
+                    <tr>
+                      <td class="product-iamge"> 
+                        <div class="img-wrapper"><img src="{{cart_item.product.product_image.url}}" alt="product image"></div>
+                      </td>
+                      <td class="product-name">{{cart_item.product.product_name}}</td>
+                      <td class="product-price">Rs {{cart_item.product.product_selling_price}} </td>
+                      <td class="product-quantity"> 
+                      <style>.blue-color {color:blue;}.green-color {color:green;}.teal-color {color:teal;}.yellow-color {color:yellow;}.red-color {color:red;}</style>
+                      <a href= "{% url 'remove_cart' cart_item.product.id %}"<i class= "fa fa-minus red-color "></i></a>
+                      <input class="quantity no-round-input center" type="text" min="1" value="{{cart_item.quantity}}">
+                      <a href= "{% url 'add_cart' cart_item.product.id %}" <i class="fa fa-plus green-color"></i></a>
+                      </td>
+                      <td class="product-total">Rs{{cart_item.sub_total}}</td>
+                      <td class="product-clear">  
+                         <a href= "{% url 'remove_cart_item' cart_item.product.id %}" class="no-round-btn"><i class="icon_close"></i></a>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-12 text-left">
+              <button class="normal-btn submit-btn"><a href="{% url 'index1' %}" style="color:black"> Continue Shopping</a></button>
+			  <button class="normal-btn submit-btn"><a href="{% url 'shop_checkout' %}" style="color:black"> Go To Checkout</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End shopping cart-->
+      <!--<div class="partner">
+        <div class="container">
+          <div class="partner_block d-flex justify-content-between" data-slick="{&quot;slidesToShow&quot;: 6}">
+            <div class="partner--logo" href="#"> <a href="#"><img src="assets/images/partner/partner_01.png" alt="partner logo"></a></div>
+            <div class="partner--logo" href="#"> <a href="#"><img src="assets/images/partner/partner_02.png" alt="partner logo"></a></div>
+            <div class="partner--logo" href="#"> <a href="#"><img src="assets/images/partner/partner_01.png" alt="partner logo"></a></div>
+            <div class="partner--logo" href="#"> <a href="#"><img src="assets/images/partner/partner_02.png" alt="partner logo"></a></div>
+            <div class="partner--logo" href="#"> <a href="#"><img src="assets/images/partner/partner_01.png" alt="partner logo"></a></div>
+            <div class="partner--logo" href="#"> <a href="#"><img src="assets/images/partner/partner_02.png" alt="partner logo"></a></div>
+            <div class="partner--logo" href="#"> <a href="#"><img src="assets/images/partner/partner_01.png" alt="partner logo"></a></div>
+          </div>
+        </div>
+      </div>-->
+      <!-- End partner-->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 text-sm-center text-md-left">
+              <div class="footer-logo"><img src="{% static 'assets/images/logo (1).png' %}" alt=""></div>
+              <div class="footer-contact">
+                <p>Address: 60-49 Road 11378 New York</p>
+                <p>Phone: +91 987 654 3210</p>
+                <p>Email: info.dirgayush@gmail.com</p>
+              </div>
+              <div class="footer-social"><a class="round-icon-btn" href="#"><i class="fab fa-facebook-f"> </i></a><a class="round-icon-btn" href="#"><i class="fab fa-twitter"></i></a><a class="round-icon-btn" href="#"><i class="fab fa-invision"> </i></a><a class="round-icon-btn" href="#"><i class="fab fa-pinterest-p"></i></a></div>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-12 col-sm-4 text-sm-center text-md-left">
+                  <div class="footer-quicklink">
+                    <h5>Infomation</h5><a href="about_us.html">About us</a><a href="shop_checkout">Check out</a><a href="contact">Contact</a><a href="about_us.html">Service</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4 text-sm-center text-md-left">
+                  <div class="footer-quicklink">
+                    <h5>My Account</h5><a href="login.html">My Account</a><a href="contact">Contact</a><a href="shop_cart">Shopping cart</a><a href="shop_grid%2blist_3col.html">Shop</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4 text-sm-center text-md-left">
+                  <div class="footer-quicklink">
+                    <h5>Quick Shop</h5><a href="about_us.html">About us</a><a href="shop_checkout">Check out</a><a href="contact">Contact</a><a href="about_us.html">Service</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="newletter">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-12 col-md-7">
+                <div class="newletter_text text-center text-md-left">
+                  <h5>Join Our Newsletter Now</h5>
+                  <p>Get E-mail updates about our latest shop and special offers.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-5">
+                <div class="newletter_input">
+                  <input class="round-input" type="text" placeholder="Enter your email">
+                  <button>Subcribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-credit">
+          <div class="container">
+            <div class="footer-creadit_block d-flex flex-column flex-md-row justify-content-start justify-content-md-between align-items-baseline align-items-md-center">
+              <p class="author">Copyright © 2019 Dirgayush - All Rights Reserved.</p><img class="payment-method" src="{% static 'assets/images/payment.png' %}" alt="">
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End footer-->
+    </div>
+    <script src="../../../cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'assetsassets/js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'assetsassets/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assetsassets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assetsassets/js/jquery.easing.js' %}"></script>
+    <script src="{% static 'assetsassets/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'assetsassets/js/jquery.zoom.min.js' %}"></script>
+    <script src="{% static 'assetsassets/js/parallax.js' %}"></script>
+    <script src="{% static 'assetsassets/js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'assetsassets/js/numscroller-1.0.js' %}"></script>
+    <script src="{% static 'assetsassets/js/vanilla-tilt.min.js' %}"></script>
+    <script src="{% static 'assetsassets/js/main.js' %}"></script>
+    <script></script>
+  </body>
+
+<!-- Mirrored from afinda.vn/html/Ogami/shop_wishlist.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Mar 2021 09:48:44 GMT -->
+</html>

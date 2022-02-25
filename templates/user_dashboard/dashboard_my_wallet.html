@@ -1,0 +1,996 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang=en>
+
+<!-- Mirrored from sirisam.com/dashboard_overview.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Mar 2021 07:00:49 GMT -->
+<head>
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width, shrink-to-fit=9">
+<title>Dirgayus Private Limited</title>
+<link rel=icon type=image/png href=images/fav.png>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&amp;display=swap" rel=stylesheet>
+<link href="{% static 'vendor/unicons-2.0.1/css/unicons.css' %}" rel=stylesheet>
+<link href="{% static 'css/dstyle.css' %}" rel=stylesheet>
+<link href="{% static 'css/dresponsive.css' %}" rel=stylesheet>
+<link href="{% static 'css/dnight-mode.css' %}" rel=stylesheet>
+<link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel=stylesheet>
+<link href="{% static 'vendor/OwlCarousel/assets/owl.carousel.css' %}" rel=stylesheet>
+<link href="{% static 'vendor/OwlCarousel/assets/owl.theme.default.min.css' %}" rel=stylesheet>
+<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel=stylesheet>
+<link rel=stylesheet type=text/css href="{% static 'vendor/semantic/semantic.min.css' %}">
+<link rel=stylesheet href=../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
+<script>function myFunction(){var e=25;var d=document.getElementById("firstnumber").value;document.getElementById("price-001").innerHTML=d*e}function myfunction(){var e=35;var d=document.getElementById("secondnumber").value;document.getElementById("demo1").innerHTML=d*e}function total(){var e=document.getElementById("demo").value;var d=document.getElementById("demo1").value;c=e*d;document.getElementById("demo2").value=c}</script>
+</head>
+<body onload=myFunction()>
+<div id=category_model class="header-cate-model main-gambo-model modal fade" tabindex=-1 role=dialog aria-modal=false>
+<div class="modal-dialog category-area" role=document>
+<div class=category-area-inner>
+<div class=modal-header>
+<button type=button class="close btn-close" data-dismiss=modal aria-label=Close>
+<i class="uil uil-multiply"></i>
+</button>
+</div>
+<div class="category-model-content modal-content">
+<div class=cate-header>
+<h4>Select Category</h4>
+</div>
+<ul class=category-by-cat>
+<li>
+<a href=fruits-and-vegitables.html class=single-cat-item>
+<div class=icon>
+<img src=images/category/icon-1.svg alt="Fruits and Vegetables"/>
+</div>
+<div class=text> Fruits and Vegetables </div>
+</a>
+</li>
+<li>
+<a href=rice-rice-products.html class=single-cat-item>
+<div class=icon>
+<img src=images/category/icon-2.svg alt="Grocery & Staples"/>
+</div>
+<div class=text> Grocery & Staples </div>
+</a>
+</li>
+<li>
+<a href=dairy.html class=single-cat-item>
+<div class=icon>
+<img src=images/category/icon-3.svg alt="Dairy"/>
+</div>
+<div class=text> Dairy</div>
+</a>
+</li>
+</ul>
+<a href=more-categories.html class=morecate-btn><i class="uil uil-apps"></i>More Categories</a>
+</div>
+</div>
+</div>
+</div>
+<div id=search_model class="header-cate-model main-gambo-model modal fade" tabindex=-1 role=dialog aria-modal=false>
+<div class="modal-dialog search-ground-area" role=document>
+<div class=category-area-inner>
+<div class=modal-header>
+<button type=button class="close btn-close" data-dismiss=modal aria-label=Close>
+<i class="uil uil-multiply"></i>
+</button>
+</div>
+<div class="category-model-content modal-content">
+<div class=search-header>
+<form action=#>
+<input type=search placeholder="Search for products...">
+<button type=submit><i class="uil uil-search"></i></button>
+</form>
+</div>
+<div class=search-by-cat>
+<a href=# class=single-cat>
+<div class=icon>
+<img src=images/category/icon-1.svg alt="Fruits and Vegetables"/>
+</div>
+<div class=text>
+Fruits and Vegetables
+</div>
+</a>
+<a href=# class=single-cat>
+<div class=icon>
+<img src=images/category/icon-2.svg alt="Grocery & Staples"/>
+</div>
+<div class=text> Grocery & Staples </div>
+</a>
+<a href=# class=single-cat>
+<div class=icon>
+<img src=images/category/icon-3.svg alt="Dairy"/>
+</div>
+<div class=text> Dairy</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bs-canvas bs-canvas-left position-fixed bg-cart h-100">
+<div class="bs-canvas-header side-cart-header p-3">
+<div class="d-inline-block main-cart-title">My Cart <span>(1 Items)</span></div>
+<button type=button class="bs-canvas-close close" aria-label=Close><i class="fa fa-shopping-basket pr-2" style=font-size:19px;color:#ffffff></i></button>
+</div>
+<div class=bs-canvas-body>
+<div class=cart-top-total>
+<div class=cart-total-dil>
+<h4>Sirisam Super Market</h4>
+<span>₹34</span>
+</div>
+<div class="cart-total-dil pt-2">
+<h4>Delivery Charges</h4>
+<span>₹1</span>
+</div>
+</div>
+<div class=side-cart-items>
+<div class=cart-item>
+<form action=https://sirisam.com/checkout.html>
+<div class=cart-product-img id=imgcontainer1>
+<img src=images/product/img-1.jpg alt="Calliflower"/>
+<div class=offer-badge>6% OFF</div>
+</div>
+<div class=cart-text>
+<h4 id=product-001>Calliflower</h4>
+<div class=cart-radio>
+<ul class=kggrm-now>
+<li>
+<input type=radio id=a1 name=cart1>
+<label for=a1>0.50</label>
+</li>
+<li>
+<input type=radio id=a2 name=cart1>
+<label for=a2>1kg</label>
+</li>
+<li>
+<input type=radio id=a3 name=cart1>
+<label for=a3>2kg</label>
+</li>
+<li>
+<input type=radio id=a4 name=cart1>
+<label for=a4>3kg</label>
+</li>
+</ul>
+</div>
+<div class=qty-group>
+<div class="quantity buttons_added">
+<input type=number step=1 name=quantity value=1 class="input-text qty text" id="firstnumber"min=1 max="100"onkeyup=myFunction() />
+</div>
+<div class=main-total-cart>
+<h2>Total</h2>
+<div class=cart-item-price><span class=price-product>₹</span><span class=price-product id=price-001>25</span><span>₹15</span></div>
+</div>
+</div>
+<button type=button class=cart-close-btn><i class="uil uil-multiply"></i></button>
+</div>
+</div>
+</div>
+</div>
+<div class=bs-canvas-footer>
+<div class="form-group pl-2 pt-3">
+<input type=submit class="btn btn-warning" value="Proceed Checkout" onclick=checkout()>
+</div>
+</form>
+</div>
+</div>
+<div class="bs-canvas bs-canvas-right position-fixed bg-cart h-100">
+<div class="bs-canvas-header side-cart-header p-3">
+<div class="d-inline-block main-cart-title">Filters</div>
+<button type=button class="bs-canvas-close close" aria-label=Close><i class="uil uil-multiply"></i></button>
+</div>
+<div class="bs-canvas-body filter-body">
+<div class=filter-items>
+<div class=filtr-cate-title>
+<h4>Categories</h4>
+</div>
+<div class="filter-item-body scrollstyle_4">
+<div class=cart-radio>
+<ul class=cte-select>
+<li>
+<input type=radio id=c1 name=category1>
+<label for=c1>All</label>
+</li>
+<li>
+<input type=radio id=c2 name=category1 checked>
+<label for=c2>Vegetables & Fruits</label>
+</li>
+<li>
+<input type=radio id=c3 name=category1>
+<label for=c3>Grocery & Staples</label>
+</li>
+<li>
+<input type=radio id=c4 name=category1>
+<label for=c4>Dairy & Eggs</label>
+</li>
+<li>
+<input type=radio id=c5 name=category1>
+<label for=c5>Beverages</label>
+</li>
+<li>
+<input type=radio id=c6 name=category1>
+<label for=c6>Snacks</label>
+</li>
+<li>
+<input type=radio id=c7 name=category1>
+<label for=c7>Home Care</label>
+</li>
+<li>
+<input type=radio id=c8 name=category1>
+<label for=c8>Noodles & Sauces</label>
+</li>
+<li>
+<input type=radio id=c9 name=category1>
+<label for=c9>Personal Care</label>
+</li>
+<li>
+<input type=radio id=c10 name=category1>
+<label for=c10>Pat Care</label>
+</li>
+<li>
+<input type=radio id=c11 name=category1>
+<label for=c11>Mea & Seafood</label>
+</li>
+<li>
+<input type=radio id=c12 name=category1>
+<label for=c12>Electronics</label>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=filter-items>
+<div class=filtr-cate-title>
+<h4>Brand</h4>
+</div>
+<div class="other-item-body scrollstyle_4">
+<div class=brand-list>
+<div class=search-by-catgory>
+<div class="ui search">
+<div class="ui left icon input swdh10">
+<input class="prompt srch10" type=text placeholder="Search by brand..">
+<i class="uil uil-search-alt icon icon1"></i>
+</div>
+</div>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=brand_1>
+<label class=custom-control-label for=brand_1>Brand Name</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=brand_2>
+<label class=custom-control-label for=brand_2>Brand Name</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=brand_3>
+<label class=custom-control-label for=brand_3>Brand Name</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=brand_4>
+<label class=custom-control-label for=brand_4>Brand Name</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=brand_5>
+<label class=custom-control-label for=brand_5>Brand Name</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=brand_6>
+<label class=custom-control-label for=brand_6>Brand Name</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=brand_7>
+<label class=custom-control-label for=brand_7>Brand Name</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=brand_8>
+<label class=custom-control-label for=brand_8>Brand Name</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=brand_9>
+<label class=custom-control-label for=brand_9>Brand Name</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=brand_10>
+<label class=custom-control-label for=brand_10>Brand Name</label>
+</div>
+</div>
+</div>
+</div>
+<div class=filter-items>
+<div class=filtr-cate-title>
+<h4>Price</h4>
+</div>
+<div class="price-pack-item-body scrollstyle_4">
+<div class=brand-list>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=price_1>
+<label class=custom-control-label for=price_1>Less than ₹2 <span class=webproduct>(9)</span></label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=price_2>
+<label class=custom-control-label for=price_2>₹2 to ₹5 <span class=webproduct>(8)</span></label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=price_3>
+<label class=custom-control-label for=price_3>₹6 to ₹10 <span class=webproduct>(12)</span></label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=price_4>
+<label class=custom-control-label for=price_4>₹11 to ₹15 <span class=webproduct>(4)</span></label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=price_5>
+<label class=custom-control-label for=price_5>₹15 to ₹20 <span class=webproduct>(16)</span></label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=price_6>
+<label class=custom-control-label for=price_6>₹21 to ₹25 <span class=webproduct>(18)</span></label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=price_7>
+<label class=custom-control-label for=price_7>More than ₹25 <span class=webproduct>(25)</span></label>
+</div>
+</div>
+</div>
+</div>
+<div class=filter-items>
+<div class=filtr-cate-title>
+<h4>Discount</h4>
+</div>
+<div class="offer-item-body scrollstyle_4">
+<div class=brand-list>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=offer_1>
+<label class=custom-control-label for=offer_1>2% - 5% <span class=webproduct>(9)</span></label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=offer_2>
+<label class=custom-control-label for=offer_2>6% - 10% <span class=webproduct>(5)</span></label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=offer_3>
+<label class=custom-control-label for=offer_3>11% - 15% <span class=webproduct>(11)</span></label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=offer_4>
+<label class=custom-control-label for=offer_4>16% - 25% <span class=webproduct>(27)</span></label>
+</div>
+</div>
+</div>
+</div>
+<div class=filter-items>
+<div class=filtr-cate-title>
+<h4>Pack Size</h4>
+</div>
+<div class="price-pack-item-body scrollstyle_4">
+<div class=brand-list>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_1>
+<label class=custom-control-label for=pack_1>1 pc</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_2>
+<label class=custom-control-label for=pack_2>1 pc approx. 400 to 600 gm</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_3>
+<label class=custom-control-label for=pack_3>1 pc approx. 500 to 800 gm</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_4>
+<label class=custom-control-label for=pack_4>Combo 3 Items</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_5>
+<label class=custom-control-label for=pack_5>Combo 4 Items</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_6>
+<label class=custom-control-label for=pack_6>Combo 5 Items</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_7>
+<label class=custom-control-label for=pack_7>2 pcs</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_8>
+<label class=custom-control-label for=pack_8>100 g</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_9>
+<label class=custom-control-label for=pack_9>200 g</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_10>
+<label class=custom-control-label for=pack_10>250 g</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_11>
+<label class=custom-control-label for=pack_11>500g</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_12>
+<label class=custom-control-label for=pack_12>1kg</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_13>
+<label class=custom-control-label for=pack_13>2kg</label>
+</div>
+<div class="custom-control custom-checkbox pb2">
+<input type=checkbox class=custom-control-input id=pack_14>
+<label class=custom-control-label for=pack_14>3kg</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<header class="header clearfix">
+<div class=top-header-group>
+<div class=top-header>
+<div class=res_main_logo>
+<a href=index-2.html><img src=images/siri_sam.png title="sirisam logo" alt="sirisam_logo"/></a>
+</div>
+<div class=main_logo id=logo>
+<a href=index-2.html><img src=images/siri_sam.png title="sirisam logo" alt="sirisam_logo"/></a>
+<a href=index-2.html><img class=logo-inverse src=images/siri_sam.png title="sirisam logo" alt="sirisam_logo"/></a>
+</div>
+<div class=select_location>
+<div class="ui inline dropdown loc-title">
+<div class=text>
+<i class="uil uil-location-point" title="Hyderabad"></i>
+Hyderabad
+</div>
+<i class="uil uil-angle-down icon__14"></i>
+<div class="menu dropdown_loc">
+<div class="item channel_item">
+<i class="uil uil-location-point" title="Gurugram"></i>
+Gurugram
+</div>
+<div class="item channel_item">
+<i class="uil uil-location-point" title="new Delhi"></i>
+New Delhi
+</div>
+<div class="item channel_item">
+<i class="uil uil-location-point" title="Bangalore"></i>
+Bangalore
+</div>
+<div class="item channel_item">
+<i class="uil uil-location-point" title="Mumbai"></i>
+Mumbai
+</div>
+<div class="item channel_item">
+<i class="uil uil-location-point" title="Hyderabad"></i>
+Hyderabad
+</div>
+<div class="item channel_item">
+<i class="uil uil-location-point" title="Kolkata"></i>
+Kolkata
+</div>
+<div class="item channel_item">
+<i class="uil uil-location-point" title="Ludhiana"></i>
+Ludhiana
+</div>
+<div class="item channel_item">
+<i class="uil uil-location-point" title="Chandigarh"></i>
+Chandigarh
+</div>
+</div>
+</div>
+</div>
+<div class=search120>
+<div class="ui search">
+<div class="ui left icon input swdh10">
+<input class="prompt srch10" type=text placeholder="I am looking for" aria-label="Search through site content">
+<i class='uil uil-search-alt icon icon1'></i>
+</div>
+</div>
+</div>
+<div class=header_right>
+<ul>
+<li>
+<a href=# class=offer-link title="+91 9966726793"><i class="uil uil-phone-alt"></i>+91 9966726793</a>
+</li>
+<li>
+<a href=offers.html class=offer-link title=Offers><i class="uil uil-gift"></i>Offers</a>
+</li>
+<li>
+<a href=faq.html class=offer-link title=Help><i class="uil uil-question-circle"></i>Help</a>
+</li>
+<li>
+<a href=dashboard_my_wishlist.html class=option_links title=Wishlist><i class='uil uil-heart icon_wishlist'></i><span class=noti_count1>3</span></a>
+</li>
+<li class="ui dropdown">
+<a href=# class=opts_account>
+<img src=images/avatar/img-5.jpg alt="venkat reddy" title="user name" />
+<span class=user__name>Venkat Reddy</span>
+<i class="uil uil-angle-down"></i>
+</a>
+<div class="menu dropdown_account">
+<div class=night_mode_switch__btn>
+<a href=# id=night-mode class=btn-night-mode>
+<i class="uil uil-moon" title="Night Mode"></i> Night mode
+<span class=btn-night-mode-switch>
+<span class=uk-switch-button></span>
+</span>
+</a>
+</div>
+<a href=dashboard_overview.html class="item channel_item" title=dashboard><i class="uil uil-apps icon__1"></i>Dashbaord</a>
+<a href=dashboard_my_orders.html class="item channel_item" title="my orders"><i class="uil uil-box icon__1"></i>My Orders</a>
+<a href=dashboard_my_wishlist.html class="item channel_item" title="my whishlist"><i class="uil uil-heart icon__1"></i>My Wishlist</a>
+<a href=dashboard_my_wallet.html class="item channel_item" title="my wallet"><i class="fa fa-rupee pl-2"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Wallet</a>
+<a href=dashboard_my_addresses.html class="item channel_item" title="my address"><i class="uil uil-location-point icon__1"></i>My Address</a>
+<a href=offers.html class="item channel_item" title=offers><i class="uil uil-gift icon__1"></i>Offers</a>
+<a href=faq.html class="item channel_item" title=faq><i class="uil uil-info-circle icon__1"></i>Faq</a>
+<a href=sign_in.html class="item channel_item" title=logout><i class="uil uil-lock-alt icon__1"></i>Logout</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=sub-header-group>
+<div class=sub-header>
+<div class="ui dropdown">
+<a href=# class="category_drop hover-btn" data-toggle=modal data-target=#category_model title=Categories><i class="uil uil-apps"></i><span class=cate__icon>Select Category</span></a>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light py-3">
+<div class=container-fluid>
+<button class="navbar-toggler menu_toggle_btn" type=button data-target=#navbarSupportedContent><i class="uil uil-bars"></i></button>
+<div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-dark1 p-3 p-lg-0 mt1-5 mt-lg-0 mobileMenu" id=navbarSupportedContent>
+<ul class="navbar-nav main_nav align-self-stretch">
+<li class=nav-item><a href=index-2.html class="nav-link active" title=Home>Home</a></li>
+<li class=nav-item>
+<div class="ui icon top left dropdown nav__menu">
+<a class=nav-link title="fruits & vegetables">Fruits & Vegetables <i class="uil uil-angle-down"></i></a>
+<div class="menu dropdown_page">
+<a href=fresh-fruits.html title="Fresh Fruits"class="item channel_item page__links"><img src=images/about/fresh-fruits.jpg width=30px title="fresh-fruits"alt="Fresh Fruits"/>Fresh Fruits</a>
+<a href=fresh-vegetables.html class="item channel_item page__links" title="Fresh Vegetables"><img src="images/about/fresh-vegetables.png"width=30px; title="fresh-vegetables" alt="Fresh Vegetables"/>Fresh Vegetables</a>
+<a href=exotic-fruits-vegetables.html title="Exotix Fruits & Vegetables"class="item channel_item page__links"><img src=images/about/exotic-fruits%26vegetables.png width=30px title="exotic-fruits-vegetables"alt="Exotic Fruits & Vegetables"/>Exotic Fruits & Vegetables</a>
+</div>
+</div>
+</li>
+<li class=nav-item>
+<a class=nav-link href=dairy.html title=Dairy>Dairy </a>
+</li>
+<li class=nav-item>
+<div class="ui icon top left dropdown nav__menu">
+<a class=nav-link title=Pages>Staples<i class="uil uil-angle-down"></i></a>
+<div class="menu dropdown_page">
+<a href=atta-flours-sooji.html title="Atta Flours & Sooji"class="item channel_item page__links"><img src=images/about/atta.jpg width=30px alt="Atta Flours & Sooji"/>Atta Flours & Sooji</a>
+<a href=dals-pulses.html title="Dals Pulses"class="item channel_item page__links"><img src=images/about/dal.jpg width=30px title="dals-pulses"alt="Dals Pulses"/>Dals Pulses</a>
+<a href=rice-products.html title="Rice Products"class="item channel_item page__links"><img src=images/about/rice.jpg width=30px title="rice-products" alt="Rice Products"/>Rice Products</a>
+<a href=edible-oils.html title="Edible Oil"class="item channel_item page__links"><img src=images/about/edible-oil.jpg width=30px title="edible-oil" alt="Edible Oils"/>Edible Oils</a>
+<a href=dry-fruits.html title="Dry Fruits"class="item channel_item page__links"><img src=images/about/dry-fruits.jpg width=30px title="dry-fruits" alt="Dry Fruits"/>Dry Fruits</a>
+<a href=masala-spices.html title="Masalas Speices"class="item channel_item page__links"><img src=images/about/spices%26masalas.jpg width=30px title="masalas-speices"alt="Masalas Speices"/>Masalas Spices</a>
+<a href=salt-sugar-jeggery.html title="Salt, Sugar & Jeggery"class="item channel_item page__links"><img src=images/about/sugar.jpg width=30px title="salt-sugar-jeggery"alt="Salt, Sugar & Jeggery"/>Salt, Sugar & Jeggery</a>
+<a href=soya-products-wheat-other.html title="Soya Products Wheat & Other"class="item channel_item page__links"><img src=images/about/soai.jpg width=30px; title="soya product soia-products-wheat-other"alt="Soya Products Wheat & Other"/>Soya Products Wheat & Other</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class=catey__icon>
+<a href=# class=cate__btn data-toggle=modal data-target=#category_model title=Categories><i class="uil uil-apps"></i></a>
+</div>
+<div class="header_cart order-1">
+<a href=# class="cart__btn hover-btn pull-bs-canvas-left" title=Cart><i class="fa fa-shopping-basket pr-2" style=font-size:19px;color:#ffffff></i><span>Cart</span><ins>1</ins><i class="uil uil-angle-down"></i></a>
+</div>
+<div class="search__icon order-1">
+<a href=# class="search__btn hover-btn" data-toggle=modal data-target=#search_model title=Search><i class="uil uil-search"></i></a>
+</div>
+</div>
+</div>
+</header>
+<div class=wrapper>
+<div class=gambo-Breadcrumb>
+<div class=container>
+<div class=row>
+<div class=col-md-12>
+<nav aria-label=breadcrumb>
+<ol class=breadcrumb>
+<li class=breadcrumb-item><a href=index-2.html>Home</a></li>
+<li class="breadcrumb-item active" aria-current=page>User Dashboard</li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class=dashboard-group>
+<div class=container>
+<div class=row>
+<div class=col-lg-12>
+<div class=user-dt>
+<div class=user-img>
+<img src=images/avatar/img-5.jpg alt="Venkat Reddy"/>
+<div class=img-add>
+<input type=file id=file>
+<label for=file><i class="uil uil-camera-plus"></i></label>
+</div>
+</div>
+<h4>Venkat Reddy</h4>
+<p>+91 9966726793<a href=#><i class="uil uil-edit"></i></a></p>
+<div class=earn-points><img src=images/Dollar.svg alt="Dollar"/>Wallet : <span>20</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class>
+<div class=container>
+<div class=row>
+<div class="col-lg-3 col-md-4">
+<div class=left-side-tabs>
+<div class=dashboard-left-links>
+<a href="{% url 'dashboard' %}" class="user-item active"><i class="uil uil-apps"></i>Overview</a>
+<a href="{% url 'my_orders' %}" class=user-item><i class="uil uil-box"></i>My Orders</a>
+<a href="{% url 'my_rewards' %}" class=user-item><i class="uil uil-gift"></i>My Rewards</a>
+<a href="#" class=user-item><i class="uil uil-wallet"></i>My Wallet</a>
+<a href="{% url 'my_wishlist' %}" class=user-item><i class="uil uil-heart"></i>Shopping Wishlist</a>
+<a href="{% url 'my_addresses' %}" class=user-item><i class="uil uil-location-point"></i>My Address</a>
+<a href="{% url 'logout' %}" class=user-item><i class="uil uil-exit"></i>Logout</a>
+</div>
+</div>
+</div>
+<div class="col-lg-9 col-md-8">
+<div class=dashboard-right>
+<div class=row>
+<div class=col-md-12>
+<div class=main-title-tab>
+<h4><i class="uil uil-wallet"></i>My Wallet</h4>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class=pdpt-bg>
+<div class=reward-body-dtt>
+<div class=reward-img-icon>
+<img src=images/Indian_Rupee_Currency-512.png alt="Blance"/>
+</div>
+<span class=rewrd-title>My Balance</span>
+<h4 class=cashbk-price>₹120</h4>
+<span class=date-reward>Added : 8 Aug 2020</span>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class=pdpt-bg>
+<div class=gambo-body-cash>
+<div class=reward-img-icon>
+<img class=rotate-img src=images/india-currency.jpg alt="Sirisam Cashback"/>
+</div>
+<span class=rewrd-title>Siri Sam Cashback Balance</span>
+<h4 class=cashbk-price>₹5</h4>
+<p>100% of this can be used for your next order.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class=pdpt-bg>
+<div class=pdpt-title>
+<h4>Active Offers</h4>
+</div>
+<div class=active-offers-body>
+<div class=table-responsive>
+<table class="table ucp-table earning__table">
+<thead class=thead-s>
+<tr>
+<th scope=col>Offers</th>
+<th scope=col>Offer Code</th>
+<th scope=col>Expires Date</th>
+<th scope=col>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15%</td>
+<td>SIRISAMCOUP15</td>
+<td>31 Aug 2020</td>
+<td><b class=offer_active>Activated</b></td>
+</tr>
+<tr>
+<td>10%</td>
+<td>SIRISAMCOUP10</td>
+<td>25 Aug 2020</td>
+<td><b class=offer_active>Activated</b></td>
+</tr>
+<tr>
+<td>25%</td>
+<td>SIRISAMCOUP25</td>
+<td>20 Aug 2020</td>
+<td><b class=offer_active>Activated</b></td>
+</tr>
+<tr>
+<td>5%</td>
+<td>SIRISAMCOUP05</td>
+<td>15 Aug 2020</td>
+<td><b class=offer_active>Activated</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class=pdpt-bg>
+<div class=pdpt-title>
+<h4>Add Balance</h4>
+</div>
+<div class=add-cash-body>
+<div class=row>
+<div class="col-lg-6 col-md-12">
+<div class="form-group mt-1">
+<label class=control-label>Holder Name*</label>
+<div class="ui search focus">
+<div class="ui left icon input swdh11 swdh19">
+<input class="prompt srch_explore" type=text name=holdername value id=holder[name] required maxlength=64 placeholder="Holder Name">
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class="form-group mt-1">
+<label class=control-label>Card Number*</label>
+<div class="ui search focus">
+<div class="ui left icon input swdh11 swdh19">
+<input class="prompt srch_explore" type=text name=cardnumber value id=card[number] required maxlength=64 placeholder="Card Number">
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4">
+<div class="form-group mt-1">
+<label class=control-label>Expiration Month*</label>
+<select class="ui fluid search dropdown form-dropdown" name=card[expire-month]>
+<option value>Month</option>
+<option value=1>January</option>
+<option value=2>February</option>
+<option value=3>March</option>
+<option value=4>April</option>
+<option value=5>May</option>
+<option value=6>June</option>
+<option value=7>July</option>
+<option value=8>August</option>
+<option value=9>September</option>
+<option value=10>October</option>
+<option value=11>November</option>
+<option value=12>December</option>
+</select>
+</div>
+</div>
+<div class="col-lg-4 col-md-4">
+<div class="form-group mt-1">
+<label class=control-label>Expiration Year*</label>
+<div class="ui search focus">
+<div class="ui left icon input swdh11 swdh19">
+<input class="prompt srch_explore" type=text name=card[expire-year] maxlength=4 placeholder=Year>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4">
+<div class="form-group mt-1">
+<label class=control-label>CVV*</label>
+<div class="ui search focus">
+<div class="ui left icon input swdh11 swdh19">
+<input class="prompt srch_explore" name=card[cvc] maxlength=3 placeholder=CVV>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class="form-group mt-1">
+<label class=control-label>Add Balance*</label>
+<div class="ui search focus">
+<div class="ui left icon input swdh11 swdh19">
+<input class="prompt srch_explore" type=text name=addbalance maxlength=3 placeholder=₹0>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href=# class="next-btn16 hover-btn mt-3">Add Balance</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class=pdpt-bg>
+<div class=pdpt-title>
+<h4>History</h4>
+</div>
+<div class="history-body scrollstyle_4">
+<ul class=history-list>
+<li>
+<div class=purchase-history>
+<div class=purchase-history-left>
+<h4>Purchase</h4>
+<p>Transaction ID <ins>sirisam14255896</ins></p>
+<span>6 Aug 2020, 12.56PM</span>
+</div>
+<div class=purchase-history-right>
+<span>-₹25</span>
+<a href=#>View</a>
+</div>
+</div>
+</li>
+<li>
+<div class=purchase-history>
+<div class=purchase-history-left>
+<h4>Purchase</h4>
+<p>Transaction ID <ins>sirisam14255895</ins></p>
+<span>5 Aug 2020, 11.16AM</span>
+</div>
+<div class=purchase-history-right>
+<span>-₹21</span>
+<a href=#>View</a>
+</div>
+</div>
+</li>
+<li>
+<div class=purchase-history>
+<div class=purchase-history-left>
+<h4>Purchase</h4>
+<p>Transaction ID <ins>sirisam14255894</ins></p>
+<span>4 Aug 2020, 02.56PM</span>
+</div>
+<div class=purchase-history-right>
+<span>-₹30</span>
+<a href=#>View</a>
+</div>
+</div>
+</li>
+<li>
+<div class=purchase-history>
+<div class=purchase-history-left>
+<h4>Purchase</h4>
+<p>Transaction ID <ins>sirisam14255893</ins></p>
+<span>3 Aug 2020, 5.56PM</span>
+</div>
+<div class=purchase-history-right>
+<span>-₹15</span>
+<a href=#>View</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=footer-second-row>
+<div class=container>
+<div class=row>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class=second-row-item>
+<img src="images/siri_sam.png" width="200px">
+<h4><b>SIRISAM Enterprises Pvt Ltd.</b></h4>
+<!-- <h4 title="Address">Address</h4> -->
+<address> Plot No 81/10, 3rd Floor, Street No 1
+Patrikanagar, Madhapur, Hyderabad, Telangana-500081</address>
+<!-- <div class=second-row-item-payment>
+<h4 title="Newsletter">Newsletter</h4>
+<div class=newsletter-input>
+<input id=email name=email type=text placeholder="Email Address" class="form-control input-md" required>
+<button class="newsletter-btn hover-btn" type=submit><i class="uil uil-telegram-alt"></i></button>
+</div>
+</div> -->
+</div>
+</div>
+<div class="col-lg-2 col-md-6 col-sm-6">
+<div class=second-row-item>
+<h4 title="Useful Links">Useful Links</h4>
+<ul>
+<li><a href=offers.html title="Offers">Offers</a></li>
+<li><a href=faq.html title="Faqs">FAQ's</a></li>
+<li><a href=career.html title="Careers">Careers</a></li>
+<li><a href=contact_us.html title="Contact Us">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 col-sm-6">
+<div class=second-row-item>
+<h4 title="Top Cities">Top Cities</h4>
+<ul>
+<li><a href=fresh-fruits.html title="Hyderabad">Hyderabad</a></li>
+<li><a href=fresh-vegetables.html title="Karimnagar">Karimnagar</a></li>
+<li><a href=exotic-fruits-vegetables.html title="Warangal">Warangal</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6">
+<div class=second-row-item>
+<h4 title="Top Cities">Contact Us</h4>
+<ul>
+<li>+91 9966726793</li>
+<li>info@sirisam.com</li>
+<!-- <li><a href=exotic-fruits-vegetables.html title="Warangal">Warangal</a></li> -->
+</ul>
+</div>
+<div class="social-links-footer text-left">
+<ul>
+<li><a href=https://www.facebook.com/Sirisamenterprises-103695701498096/ title="facebook" target="blank"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href=https://twitter.com/SirisamL title="twitter" target="blank"><i class="fab fa-twitter"></i></a></li>
+<li><a href=https://www.youtube.com/channel/UCFHbWnG5DG9g7pFr2SUsGQw/?guided_help_flow=5 title="youtube" target="blank"><i class="fa fa-youtube"></i></a></li>
+<li><a href=https://www.linkedin.com/in/sirisam-enterprises-0bb4a31b6/ title="linkedin" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a href=https://www.instagram.com/sirisamenterprisespvtltd/ title="instagram" target="blank"><i class="fab fa-instagram"></i></a></li>
+<li><a href=https://in.pinterest.com/sirisamenterprises/ title="pinterest"target="blank"><i class="fab fa-pinterest-p"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 col-sm-6">
+<div class=second-row-item-app>
+<h4 title="Download App">Download App</h4>
+<ul>
+<li><a href=#><img class=download-btn src=images/download-1.svg title="Google Play" alt="Google Play"/></a></li>
+<li><a href=#><img class=download-btn src=images/download-2.svg title="App Store" alt="App Store"/></a></li>
+</ul>
+</div>
+<div class=second-row-item-payment>
+<h4 title="Payment Method">Payment Method</h4>
+<div class=footer-payments>
+<ul id=paypal-gateway class=financial-institutes>
+<li class=financial-institutes__logo>
+<img title=Visa src=images/footer-icons/pyicon-6.svg title="Visa" alt="Visa"/>
+</li>
+<li class=financial-institutes__logo>
+<img title=Visa src=images/footer-icons/pyicon-1.svg title="Visa" alt="Visa"/>
+</li>
+<li class=financial-institutes__logo>
+<img title=MasterCard src=images/footer-icons/pyicon-2.svg title="MasterCard" alt="MasterCard"/>
+</li>
+<li class=financial-institutes__logo>
+<img title="American Express" src=images/footer-icons/pyicon-3.svg title="American Express" alt="American Express"/>
+</li>
+<li class=financial-institutes__logo>
+<img title=Discover src=images/footer-icons/pyicon-4.svg title="Discover" alt="Discover"/>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=footer-last-row>
+<div class=container>
+<div class=row>
+<div class=col-md-12>
+<div class=footer-bottom-links>
+<ul>
+<li><a href=about_us.html title="About">About</a></li>
+<li><a href=contact_us.html title="Contact">Contact</a></li>
+<li><a href=privacy_policy.html title="Privacy Policy">Privacy Policy</a></li>
+<li><a href=term_and_conditions.html title="Term & Conditions">Term & Conditions</a></li>
+</ul>
+</div>
+<div class=copyright-text>
+<!-- <i class="uil uil-copyright"></i> -->
+Copyright &copy; 2020 <b>Sirisam Enterprises Pvt Ltd.</b> All Rights Reserved. Designed & Developed By<a href=http://svsktechnologies.com/ title="SV
+ Technologies"> SVSK Technologies</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/OwlCarousel/owl.carousel.js' %}"></script>
+<script src="{% static 'vendor/semantic/semantic.min.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'js/offset_overlay.js' %}"></script>
+<script src="{% static 'js/night-mode.js' %}"></script>
+<script>function checkout(){var d=document.getElementById("imgcontainer1").innerHTML;var b=document.getElementById("product-001").innerHTML;var a=document.getElementById("price-001").innerHTML;localStorage.setItem("imgfile",d);localStorage.setItem("product",b);localStorage.setItem("total",a);return false};</script>
+</body>
+
+<!-- Mirrored from sirisam.com/dashboard_my_wallet.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Mar 2021 07:00:52 GMT -->
+</html>

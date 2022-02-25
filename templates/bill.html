@@ -1,0 +1,211 @@
+{% autoescape off %}
+{% load static %}
+<!DOCTYPE html>
+<html lang=en>
+
+<!-- Mirrored from sirisam.com/bill.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Mar 2021 07:01:38 GMT -->
+<head>
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width, shrink-to-fit=9">
+<title>Online Grocery Shopping and Online Supermarket in Hyderabad| Daily Needs Supermarket - SIRISAM Enterprises pvt ltd</title>
+<meta name=keywords content="online grocery,online grocery Hyderabad, online grocery shopping, online grocery store,online supermarket,buy groceries online,online Vegetables and fruits"/>
+<meta name="keywords" content="I love Farming,Help Farmers,serve farmers save nation,farming with passion,software farming,IT farming,orgonic farming,modern farming,education farming,farming techniques,education farming,farming employeement,farmer saviour,weekend farming,farming visitings,pick your groceries,grow your groceries,agriculture parts,agriculture resorts,indore farming">
+<meta name=description content="The best online grocery store in Hyderabad. Sirisam is an online supermarket for all your daily needs. Online shopping now made easy with a wide range of groceries and vegetables , fruits"/>
+<meta name=description content="SIRISAM - Choose and Buy Online Grocery from a wide range of fruits, vegetables, groceries products and much more. Shop Now !" />
+<meta property=og:site_name content=SIRISAM />
+<meta property=og:type content=website />
+<meta property=og:title content="Buy Grocery Online | Daily Needs Supermarket - SIRISAM" />
+<meta property=og:description content="SIRISAM - Choose and Buy Online Grocery from a wide range of fruits, vegetables, groceries products and much more. Shop Now !" />
+<meta property=og:url content=https://sirisam.com/ />
+<meta property=og:image content=https://sirisam.com/images/siri_sam.png>
+<meta name=google-site-verification content=7JfVyBzu-1D8e0NYG2S-MabgRa5AQGlHT9m7vXlD-rM>
+<meta name=keywords content="sirisam groceries, online groceries, vegetables best deals, beast deals in hyderabad" />
+<meta http-equiv=cache-control content="max-age=0" />
+<meta http-equiv=cache-control content=no-cache />
+<meta http-equiv=expires content=0 />
+<meta http-equiv=pragma content=no-cache />
+<link rel=canonical href=index.html />
+<link rel=shortlink href=index.html />
+<link rel=icon type="{% static 'image/png href=images/fav.png' %}">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&amp;display=swap" rel=stylesheet>
+<link href="{% static 'vendor/unicons-2.0.1/css/unicons.css' %}" rel=stylesheet>
+<link href="{% static 'css/dstyle.css' %}" rel=stylesheet>
+<link href="{% static 'css/dresponsive.css' %}" rel=stylesheet>
+<link href="{% static 'css/dnight-mode.css' %}" rel=stylesheet>
+<link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel=stylesheet>
+<link href="{% static 'vendor/OwlCarousel/assets/owl.carousel.css' %}" rel=stylesheet>
+<link href="{% static 'vendor/OwlCarousel/assets/owl.theme.default.min.css' %}" rel=stylesheet>
+<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel=stylesheet>
+<link rel=stylesheet type=text/css href="{% static 'vendor/semantic/semantic.min.css' %}">
+<link rel=stylesheet href=../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177059615-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","UA-177059615-1");</script>
+<script>function myFunction(){var a=25;var b=document.getElementById("firstnumber").value;document.getElementById("price-001").innerHTML=b*a}function myfunction(){var a=35;var b=document.getElementById("secondnumber").value;document.getElementById("demo1").innerHTML=b*a}function total(){var a=document.getElementById("demo").value;var b=document.getElementById("demo1").value;c=a*b;document.getElementById("demo2").value=c}</script>
+</head>
+<body>
+<header class="header clearfix">
+<div class=container>
+<div class=row>
+<div class=col-lg-12>
+<div class=top-header-group>
+<div class=top-header>
+<div class=res_main_logo>
+<a href=index-2.html><img src=siri_sam.html title="sirisam logo" alt="Sirisam Logo"/></a>
+</div>
+<div class="main_logo ml-0" id=logo>
+<a href="{% url 'index1' %}"><img src="{% static 'images/dlogo.png' %}" title="sirisam logo" alt="Sirisam Logo"/></a>
+<a href=index-2.html><img class=logo-inverse src="{% static 'images/dlogo.png' %}" title="sirisam logo" alt="Sirisam Logo"/></a>
+</div>
+<div class=header_right>
+<a href=contact_us.html class="report-btn hover-btn" title="Report on Issue">Report on Issue</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class=bill-dt-bg>
+<div class=container>
+	<div id="print">
+<div class="row justify-content-center">
+<div class=col-lg-8>
+<div class=bill-detail>
+<div class=bill-dt-step>
+	<div class="row">
+			<div class="col-lg-8"></div>
+			<div class="col-lg-4">
+			<div class="bill-title">
+			<h2 class="">Invoice</h2>
+	</div><br>
+	<div class="bill-title pr-5">
+			<span class=""><b>Date: {{date}}</b></span>
+	</div><br>
+	<div class="bill-title">
+			<span class=""><b>Invoice No: {{order.order_number}}</b></span>
+	</div>
+			</div>
+	</div>
+<div class=bill-title>
+<h4 title="Items">Items</h4>
+</div>
+<div class=bill-descp>
+<div class=itm-ttl>{{item_count}} items</div>
+{% for cart_item in cart_items %}
+<span class="item-prdct">{{cart_item.product}}</span><br>
+{% endfor %}
+</div>
+</div>
+<div class=bill-dt-step>
+<div class=bill-title>
+<h4 title="delivery Address">Delivery Address</h4>
+</div>
+<div class=bill-descp>
+<div class=itm-ttl>Address</div>
+<p class=bill-address>{{order.first_name}}<br>{{ order.address}}<br>{{ order.city }},{{ order.post_code }}</p>
+<p class=bill-address><b>Contact No:</b>{{ order.phone}}</p>
+</div>
+</div>
+<div class=bill-dt-step>
+<div class=bill-title>
+<h4 title="Payment">Payment</h4>
+</div>
+<div class=bill-descp>
+<div class="total-checkout-group p-0 border-top-0">
+<div class=cart-total-dil>
+<h4>Subtotal</h4>
+<span>₹{{order.order_total}}</span>
+</div>
+<div class="cart-total-dil pt-3">
+<h4 title="delivery Charges">Delivery Charges</h4>
+<span>Free</span>
+</div>
+</div>
+<div class="main-total-cart pl-0 pr-0 pb-0 border-bottom-0">
+<h2>Total</h2>
+<span class="mobile"style="    font-size:18px;color: #f55d2c;
+    padding-left: 610px;">₹{{order.order_total}}</span>
+</div>
+</div>
+</div>
+<div class=bill-dt-step>
+<div class=bill-title>
+<h4 title="Delivery Details">Delivery Details</h4>
+</div>
+<div class=bill-descp>
+<p class=bill-dt-sl><b>Store</b> - <span class=dly-loc>Siri Sam</span> - <span class=dlr-ttl25></span></p>
+<p class=bill-dt-sl>Order ID - {{order.order_number}}<span id=demo style=margin:0px></span></p>
+<p class=bill-dt-sl>Items - <span class=descp-bll-dt>{{item_count}}</span></p>
+<p class=bill-dt-sl id=timing>Timing - <span class=descp-bll-dt>{{date}}</span></p>
+</div>
+</div>
+<div class=bill-dt-step>
+<div class=bill-title>
+<h4 title="Payment">Payment Option</h4>
+</div>
+<div class=bill-descp>
+<p class=bill-dt-sl><span class="dlr-ttl25 mr-1"><i class="uil uil-check-circle"></i></span>Cash on Delivery</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- </div> -->
+<!-- <div class=bill-dt-bg> -->
+<div class=container>
+<div class="row justify-content-center">
+<div class=col-lg-8>
+<div class=bill-detail>
+<div class=bill-dt-step>
+<div class=bill-bottom>
+<div class=thnk-ordr>Thanks for Ordering On Dirgayush Pvt Ltd</div>
+<a class="print-btn hover-btn" onclick="printDiv('print')" value="print a div!" / title="Print">Print</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- </div> -->
+<!-- </div>
+</div>
+</div>
+</div>
+</div> -->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/OwlCarousel/owl.carousel.js' %}"></script>
+<script src="{% static 'vendor/semantic/semantic.min.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'js/product.thumbnail.slider.js' %}"></script>
+<script src="{% static 'js/offset_overlay.js' %}"></script>
+<script src="{% static 'js/night-mode.js' %}"></script>
+<script>document.getElementById("product-title").innerHTML=localStorage.getItem("product");document.getElementById("checkout-total").innerHTML=localStorage.getItem("total");document.getElementById("timing").innerHTML=localStorage.getItem("date");document.getElementById("demo").innerHTML=Math.floor(Math.random()*10000000);</script>
+<script>
+
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+document.getElementById('date').innerHTML=date;
+document.getElementById("invoice-no").innerHTML = Math.floor(Math.random() * 10000000);
+
+function printDiv(print) {
+     var printContents = document.getElementById(print).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+     	document.getElementquerySelector('title').style.visibility = 'none';
+     document.body.innerHTML = originalContents;
+}
+</script>
+</body>
+
+<!-- Mirrored from sirisam.com/bill.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Mar 2021 07:01:39 GMT -->
+</html>
+
+{% endautoescape %}

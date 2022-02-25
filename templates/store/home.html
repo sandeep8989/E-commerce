@@ -1,0 +1,428 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Animated Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <style>
+
+    @media screen and (min-width: 600px) {
+  
+    img.logo {
+       max-width: 250px;
+ min-height: 10px;
+ 
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+  
+    img.logo {
+       max-width: 190px;
+ min-height: 7px;
+ 
+
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+       
+    img.logo {
+ max-width: 150px;
+  min-height:4px;
+
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+       
+    img.gif {
+ max-width: 150px;
+  min-height:4px;
+
+  }
+}
+
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.jpg');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+#sidebar {
+  text-align: center;
+  height: 100%;
+  width: 310px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  font-weight:bold;
+  overflow-x: hidden;
+  padding: 36px 55px;
+  background-color: transparent; 
+}
+
+#sidebar a {
+  padding: 16px 18px 16px 18px;
+  text-decoration: none;
+  font-size: 30px;
+  color: green;
+  display:inline-block;
+    padding-top: 10%;
+
+}
+
+.dropbtn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  margin-left:  680%;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius:20%;
+  display: inline-block;
+
+
+}
+
+
+.dropdown {
+  position: relative;
+  /*display: inline-flex;*/
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding:18px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding-top: 52%;
+  text-decoration: none;
+  display: block;
+}
+
+
+.search {
+    width: 29%;
+    margin:10px;
+}
+
+/*.dropdown-content a:hover 
+{
+	background-color:#FF1493;
+	
+	border:100%;
+}*/
+
+.dropdown:hover .dropdown-content 
+{
+	display: block;
+}
+/*.dropdown:hover .dropbtn {
+  background-color: green;
+}*/
+  .main1{
+    width:400px;
+  height:400px;
+  border:2px solid red;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  margin:auto;
+  border-radius:50%; 
+    animation: blink 2s linear infinite;
+  }
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+
+  .main2{
+    width:300px;
+  height:300px;
+  border:2px solid red;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  margin:auto;
+  border-radius:50%; 
+    animation: blink 2s linear infinite;
+  }
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+
+  .main3{
+    width:200px;
+  height:200px;
+  border:2px solid red;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  margin:auto;
+  border-radius:50%; 
+    animation: blink 2s linear infinite;
+  }
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+
+
+.main4{
+    width:100px;
+  height:100px;
+  border:2px solid red;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  margin:auto;
+  border-radius:50%; 
+    animation: blink 2s linear infinite;
+  }
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+#videoBG {
+  position: fixed;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 100%) {
+  #videoBG {
+    display: none;
+  }
+  body {
+    background: url('images/fruits1.png');
+    background-size: cover;
+  }
+}
+
+
+
+
+
+
+
+  </style>
+
+
+  
+</head>
+
+
+
+
+<!--Preloader area start here-->
+       <!--  <div id="loader" class="loader green-color">
+            <div class="loader-container">
+                <div class='loader-icon'>
+                    <img src="assets/images/shortcut.png" alt="">
+                </div>
+            </div>
+        </div> -->
+
+
+
+<body>
+  <!--CSS Spinner-->
+<div class="spinner-wrapper">
+<div class="spinner">
+  <div class="double-bounce1"></div>
+  <div class="double-bounce2"></div>
+</div>
+</div>
+
+ <header class="coffee">
+ <nav class="navigation">
+ <div class="container">
+ <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="{% static '#' %}"> 
+      <img src="{% static 'images/logo.png' %}"  class="logo" alt="logo">  
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+   
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ -->
+ 
+    <!--<div class="dropdown" >-->
+    <!--<button class="dropbtn" ><i class="fa fa-bars"></i>-->
+    	
+    	
+     	<div id="sidebar" >
+     		
+          	<a href="index1">Milk</a>
+  			<a href="grocery">Groceries</a>
+  			<a href="fruits">Fruits</a>
+  			<a href="vegetables">Vegetables</a>
+  			<a href="spices">Spices</a>
+  			<a href="pulses">Pulses</a>
+  			
+		</div> 
+     <!--</button>-->
+      
+   <!--</div>-->    
+
+   
+
+     
+   
+ </nav>
+ 
+ </div>
+ </nav>
+ </header>
+  
+  
+  
+<!-- 
+<div class="sidenav">
+  <a href="{% static 'index.html' %}">Milk</a>
+  <a href="{% static '#about' %}">Groceries</a>
+  <a href="{% static '#services' %}">Spices</a>
+  <a href="{% static '#clients' %}">Pulses</a>
+  <a href="{% static '#contact' %}">Vegetables</a>
+</div>  -->
+  <!-- <button class="dropdown-btn">Dropdown 
+    <i class="fa fa-caret-down"></i>
+  </button> -->
+  <!-- <div class="dropdown-container">
+    <a href="{% static '#' %}">Link 1</a>
+    <a href="{% static '#' %}">Link 2</a>
+    <a href="{% static '#' %}">Link 3</a>
+  </div> -->
+
+
+ <img src="{% static 'images/gif.gif' %}" alt="bg-img" style="{% static 'width:1280px; height:577px;' %}"> 
+<!-- 
+<video id="videoBG" poster="images/gif.gif" autoplay muted loop>
+  <source src="{% static 'gif.gif" type="video/mp4" style="{% static 'width:800px; height:700px;">
+  
+</video>  -->
+
+<a href="index1" >
+  <div  class="main1" style="{% static 'cursor: pointer;' %}">   
+    <!-- <img src="images/circle-cropped" alt="circle" style="{% static 'width:200px' %}"> -->
+  </div>
+ </a>
+
+ <a href="grocery" >
+  <div  class="main2" style="{% static 'cursor: pointer;' %}">   
+    <!-- <img src="images/circle-cropped" alt="circle" style="{% static 'width:200px' %}"> -->
+  </div>
+ </a>
+
+ <a href="vegetables" >
+  <div  class="main3" style="{% static 'cursor: pointer;' %}">   
+    <!-- <img src="images/circle-cropped" alt="circle" style="{% static 'width:200px' %}"> -->
+  </div>
+ </a>
+
+ <a href="fruits" >
+  <div  class="main4" style="{% static 'cursor: pointer;' %}">   
+    <!-- <img src="images/circle-cropped" alt="circle" style="{% static 'width:200px' %}"> -->
+  </div>
+ </a>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+
+
+
+$(document).ready(function() {
+//Preloader
+preloaderFadeOutTime = 8000;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+
+
+</script>
+
+
+</body>
+
+</html>
